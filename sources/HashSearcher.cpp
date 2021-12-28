@@ -18,9 +18,7 @@ void HashSearcher::SearchHash()
               BOOST_LOG_TRIVIAL(info) << "Found correct value '"
               << random_string
               << "' with hash '" << random_hash_string << "'";
-          }
-          else
-          {
+          } else {
               BOOST_LOG_TRIVIAL(trace) << "Thread with ID: "
               << std::this_thread::get_id()
               << " || Current value '" << random_string
