@@ -20,8 +20,7 @@ int main(int argc, char* argv[])
   if (argc >= 2)
   {
     count_of_threads = boost::lexical_cast<size_t>(argv[1]);
-  } else
-  {
+  } else {
     count_of_threads = std::thread::hardware_concurrency();
   }
 

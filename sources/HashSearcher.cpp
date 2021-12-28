@@ -15,13 +15,16 @@ void HashSearcher::SearchHash()
           if (random_hash_string.substr(random_hash_string.size()
           - end_of_hash.size()) == end_of_hash)
           {
-              BOOST_LOG_TRIVIAL(info) << "Found correct value '" << random_string
+              BOOST_LOG_TRIVIAL(info) << "Found correct value '"
+              << random_string
               << "' with hash '" << random_hash_string << "'";
           }
           else
           {
-              BOOST_LOG_TRIVIAL(trace) <<"Thread with ID: "<<std::this_thread::get_id()
-              << " || Current value '" << random_string << "' with hash '" << random_hash_string << "'";
+              BOOST_LOG_TRIVIAL(trace) << "Thread with ID: "
+              << std::this_thread::get_id()
+              << " || Current value '" << random_string
+              << "' with hash '" << random_hash_string << "'";
           }
       }
 }
