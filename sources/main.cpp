@@ -4,7 +4,7 @@
 #include <boost/log/utility/setup.hpp>
 #include <thread>
 #include <vector>
-#include "HashSearcher.h"
+#include "HashSearcher.hpp"
 
 void init()
 {
