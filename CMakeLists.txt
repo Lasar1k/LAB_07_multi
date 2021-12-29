@@ -59,12 +59,12 @@ target_link_libraries(
   Boost::system
 )
 
-if(BUILD_TESTS)
+# if(BUILD_TESTS)
   add_executable(tests
     # TODO: enum your files and delete this comment
     ${CMAKE_CURRENT_SOURCE_DIR}/tests/test.cpp
   )
-  target_link_libraries(tests ${PROJECT_NAME} GTest::gtest_main)
+  # target_link_libraries(tests ${PROJECT_NAME} GTest::gtest_main)
   enable_testing()
   add_test(NAME unit_tests COMMAND tests)
-endif()
+# endif()
